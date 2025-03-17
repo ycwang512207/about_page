@@ -5,11 +5,12 @@ body{
     margin: 0;
     font-family: 'Microsoft JhengHei', sans-serif;
 }
-
-.loading{
+.layout{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.loading{
     height: 100vh;
     width: 100%;
 }
@@ -36,10 +37,13 @@ body{
         transform: scale(1.1);
     }
 }
-.loadingTC{
+.loadingImg{
     position: absolute;
-    width: 5%;
     height: auto;
+}
+
+.loadingTC{
+    width: 5%;
     animation: fadeIn 5s ease-in-out, 
     fadeOut 5s ease-in-out 6s forwards;
 }
@@ -67,9 +71,7 @@ body{
     }
 }
 .loadingTE{
-    position: absolute;
     width: 10%;
-    height: auto;
     animation: spin-fadeIn 5s ease-out 1, 
     spin-fadeout 5s ease-in-out 6s forwards;
 }
@@ -94,23 +96,17 @@ body{
     z-index: 1000; /* 保證 titleBar 層級較高，不被其他內容遮擋 */
 }
 
-.titleIcon{
+.titleBox{
     height: 100%;
     width: 50%;
     padding: 8px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .item{
     font-size: 1.5rem;
     color: #930000;
-    align-items: center;
     width: 15%;
-    display: flex;
-    justify-content: center;
     transition: background-color 0.3s ease; /* 增加過渡效果 */
 }
 .item:hover{
@@ -118,16 +114,13 @@ body{
     color: #FCFCFC;
 }
 
-.iconL{
+.icon{
     height: 75%;
     width: auto;
 }
 
 .cover{
     height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .coverImage{
     height: auto;
@@ -138,9 +131,6 @@ body{
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 25px;
 }
 .aboutText{
@@ -160,15 +150,9 @@ body{
     width: 100%;
     box-sizing: border-box;
     padding: 25px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .portfolioCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 5px solid;
     padding: 20px;
     border-radius: 20px;
