@@ -1,0 +1,152 @@
+body{
+    font-size: 18px;
+    background-color: #FFF7AE;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/*淡入動畫*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+/*淡出動畫*/
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+    to{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+.loadingTC{
+    position: absolute;
+    width: 5%;
+    height: auto;
+    animation: fadeIn 5s ease-in-out, 
+    fadeOut 5s ease-in-out 6s forwards;
+}
+
+/*轉圈淡入動畫*/
+@keyframes spin-fadeIn{
+    from{
+        opacity: 0;
+        transform: rotate(0deg) scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(360deg) scale(1.0);
+    }
+}
+/*轉圈淡出動畫*/
+@keyframes spin-fadeout{
+    from{
+        opacity: 1;
+        transform: rotate(0deg) scale(1.0);
+    }
+    to{
+        opacity: 0;
+        transform: rotate(-360deg) scale(1.1);
+    }
+}
+.loadingTE{
+    position: absolute;
+    width: 10%;
+    height: auto;
+    animation: spin-fadeIn 5s ease-out 1, 
+    spin-fadeout 5s ease-in-out 6s forwards;
+}
+
+.main{
+    display: none;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.titleBar{
+    background-color: #FCFCFC;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky; /* 讓 titleBar 隨著頁面滾動固定 */
+    top: 0; /* 固定在頁面頂部 */
+    z-index: 1000; /* 保證 titleBar 層級較高，不被其他內容遮擋 */
+}
+
+.titleIcon{
+    height: 100%;
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    font-size: 1.5rem;
+    color: #930000;
+    align-items: center;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.iconL{
+    height: 75%;
+    width: auto;
+}
+
+.cover{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coverImage{
+    height: auto;
+    width: 60%;
+}
+.aboutMe{
+    background-color: #FCFCFC;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.aboutText{
+    flex: 1;
+    margin-right: 30px;
+    border: 5px solid;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify; /* 兩端對齊 */
+}
+.hiImg{
+    height: 30%;
+    width: 30%;
+}
