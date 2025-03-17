@@ -107,6 +107,8 @@ body{
     font-size: 1.5rem;
     color: #930000;
     width: 15%;
+    box-sizing: border-box;
+    margin-right: 15px;
     transition: background-color 0.3s ease; /* 增加過渡效果 */
 }
 .item:hover{
@@ -163,4 +165,63 @@ body{
     margin-left: 30px;
     text-align: justify;
     padding: 20px;
+}
+.portfolioVideo{
+    width: 560px;
+    height: 315px;
+}
+
+@media (max-width: 1023px){
+    .loadingTC{
+        width: 10%;
+    }
+    .loadingTE{
+        width: 20%;
+    }
+    .item{
+        font-size: 1rem;
+        width: 15%;
+    }
+    .icon{
+        height: 75%;
+        width: auto;
+    }
+    .coverImage{
+        height: auto;
+        width: 80%;
+    }
+    .aboutMe{
+        flex-direction: column;
+    }
+    .aboutText{
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .hiImg{
+        height: 45%;
+        width: 45%;
+    }
+    .portfolioCard{
+        flex-direction: column;
+    }
+    .portfolioText{
+        margin-left: 0px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .item{
+        display: none;
+    }
+    .icon{
+        height: 50%;
+        width: auto;
+    }
+    
+    .portfolioVideo{
+        width: 260px;
+        height: 115px;
+    }
 }
