@@ -150,3 +150,28 @@ body{
     height: 30%;
     width: 30%;
 }
+.portfolio{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portfolioCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.portfolioText{
+    flex: 1;
+    margin-left: 30px;
+    text-align: justify;
+    padding: 20px;
+}
