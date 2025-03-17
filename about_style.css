@@ -111,6 +111,11 @@ body{
     width: 15%;
     display: flex;
     justify-content: center;
+    transition: background-color 0.3s ease; /* 增加過渡效果 */
+}
+.item:hover{
+    background-color: #930000;
+    color: #FCFCFC;
 }
 
 .iconL{

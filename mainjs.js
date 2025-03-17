@@ -1,6 +1,15 @@
-window.addEventListener('scroll',function(){
-    const aboutSection = document.querySelector('.about');
-    if (window.scrollY > 100) { // 滾動距離達到 100px 顯示 about 部分
-        aboutSection.style.display = 'block';
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    // 確保 DOM 載入後才執行
+
+    document.getElementById("coverLink").addEventListener("click", function () {
+        document.getElementById("cover").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("aboutMeLink").addEventListener("click", function () {
+        document.getElementById("aboutMe").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("portfolioLink").addEventListener("click", function () {
+        document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+    });
 });
